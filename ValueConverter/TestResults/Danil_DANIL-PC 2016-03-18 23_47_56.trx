@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a0373e6a-0921-4054-a214-e5d2b179f66b" name="Danil@DANIL-PC 2016-03-18 23:47:56" runUser="Danil-PC\Danil" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Локальные" id="26eae600-dc97-45ab-946a-70759e27358f">
+    <Description>Это - параметры по умолчанию для локального тестового запуска.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Danil_DANIL-PC 2016-03-18 23_47_56" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2016-03-18T23:47:56.4674443+06:00" queuing="2016-03-18T23:47:57.2944916+06:00" start="2016-03-18T23:47:57.3594953+06:00" finish="2016-03-18T23:47:57.8015206+06:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod" storage="c:\users\danil\documents\visual studio 2010\projects\valueconverter\testconverter\bin\debug\testconverter.dll" id="958e502a-ea8f-5ece-39cd-ea0382ace2fa">
+      <Execution id="9b3ce9d7-bfbe-4d3f-b0fb-05f9772e82d3" />
+      <TestMethod codeBase="c:/users/danil/documents/visual studio 2010/Projects/ValueConverter/TestConverter/bin/Debug/TestConverter.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ValueConverter.UnitTestConverter, TestConverter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="958e502a-ea8f-5ece-39cd-ea0382ace2fa" executionId="9b3ce9d7-bfbe-4d3f-b0fb-05f9772e82d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9b3ce9d7-bfbe-4d3f-b0fb-05f9772e82d3" testId="958e502a-ea8f-5ece-39cd-ea0382ace2fa" testName="TestMethod" computerName="DANIL-PC" duration="00:00:00.0167864" startTime="2016-03-18T23:47:57.3784964+06:00" endTime="2016-03-18T23:47:57.7255163+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9b3ce9d7-bfbe-4d3f-b0fb-05f9772e82d3">
+    </UnitTestResult>
+  </Results>
+</TestRun>
