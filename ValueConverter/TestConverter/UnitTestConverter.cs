@@ -26,6 +26,10 @@ namespace ValueConverter
             Assert.AreEqual(result, 180, 0.001, "Ошибка конвертации");
             result = metr.getSpan(8);
             Assert.AreEqual(result, 44.992, 0.001, "Ошибка конвертации");
+            result = metr.getArshin(8);
+            Assert.AreEqual(result, 11.248, 0.001, "Ошибка конвертации");
+            result = metr.getFathom(8);
+            Assert.AreEqual(result, 3.752, 0.001, "Ошибка конвертации");
         }
 
         //------Дециметры---------//
@@ -44,6 +48,10 @@ namespace ValueConverter
             Assert.AreEqual(result, 18, 0.001, "Ошибка конвертации");
             result = dm.getSpan(8);
             Assert.AreEqual(result, 4.496, 0.001, "Ошибка конвертации");
+            result = dm.getArshin(8);
+            Assert.AreEqual(result, 1.128, 0.001, "Ошибка конвертации");
+            result = dm.getFathom(8);
+            Assert.AreEqual(result, 0.3752, 0.001, "Ошибка конвертации");
         }
 
         //------Сантиметры---------//
@@ -62,6 +70,10 @@ namespace ValueConverter
             Assert.AreEqual(result, 1.8, 0.001, "Ошибка конвертации");
             result = sm.getSpan(8);
             Assert.AreEqual(result, 0.4496, 0.001, "Ошибка конвертации");
+            result = sm.getArshin(8);
+            Assert.AreEqual(result, 0.1128, 0.001, "Ошибка конвертации");
+            result = sm.getFathom(8);
+            Assert.AreEqual(result, 0.03752, 0.001, "Ошибка конвертации");
         }
 
         //------Миллиметры---------//
@@ -80,6 +92,10 @@ namespace ValueConverter
             Assert.AreEqual(result, 0.18, 0.001, "Ошибка конвертации");
             result = mm.getSpan(8);
             Assert.AreEqual(result, 0.04496, 0.001, "Ошибка конвертации");
+            result = mm.getArshin(8);
+            Assert.AreEqual(result, 0.01128, 0.001, "Ошибка конвертации");
+            result = mm.getFathom(8);
+            Assert.AreEqual(result, 0.003752, 0.001, "Ошибка конвертации");
         }
 
         //------Вершки---------//
@@ -98,6 +114,10 @@ namespace ValueConverter
             Assert.AreEqual(result, 444.5, 0.001, "Ошибка конвертации");
             result = inch.getSpan(10);
             Assert.AreEqual(result, 2.5, 0.001, "Ошибка конвертации");
+            result = inch.getArshin(10);
+            Assert.AreEqual(result, 0.625, 0.001, "Ошибка конвертации");
+            result = inch.getFathom(10);
+            Assert.AreEqual(result, 0.208, 0.001, "Ошибка конвертации");
         }
 
         //------Пяди---------//
@@ -116,6 +136,54 @@ namespace ValueConverter
             Assert.AreEqual(result, 2311.4, 0.001, "Ошибка конвертации");
             result = span.getInch(13);
             Assert.AreEqual(result, 52, 0.001, "Ошибка конвертации");
+            result = span.getArshin(13);
+            Assert.AreEqual(result, 3.25, 0.001, "Ошибка конвертации");
+            result = span.getFathom(13);
+            Assert.AreEqual(result, 1.0829, 0.001, "Ошибка конвертации");
+        }
+
+        //------Аршины---------//
+        //Тестирование конвертации аршин
+        [TestMethod]
+        public void TestArshin()
+        {
+            Arshin arshin = new Arshin();
+            double result = arshin.getMetr(5);
+            Assert.AreEqual(result, 3.555, 0.001, "Ошибка конвертации");
+            result = arshin.getDm(5);
+            Assert.AreEqual(result, 35.56, 0.001, "Ошибка конвертации");
+            result = arshin.getSm(5);
+            Assert.AreEqual(result, 355.6, 0.001, "Ошибка конвертации");
+            result = arshin.getMm(5);
+            Assert.AreEqual(result, 3556, 0.001, "Ошибка конвертации");
+            result = arshin.getInch(5);
+            Assert.AreEqual(result, 80, 0.001, "Ошибка конвертации");
+            result = arshin.getSpan(5);
+            Assert.AreEqual(result, 20, 0.001, "Ошибка конвертации");
+            result = arshin.getFathom(5);
+            Assert.AreEqual(result, 1.665, 0.001, "Ошибка конвертации");
+        }
+
+        //------Сажени---------//
+        //Тестирование конвертации аршин
+        [TestMethod]
+        public void TestFathom()
+        {
+            Fathom fathom = new Fathom();
+            double result = fathom.getMetr(6);
+            Assert.AreEqual(result, 12.804, 0.001, "Ошибка конвертации");
+            result = fathom.getDm(6);
+            Assert.AreEqual(result, 128.04, 0.001, "Ошибка конвертации");
+            result = fathom.getSm(6);
+            Assert.AreEqual(result, 1280.4, 0.001, "Ошибка конвертации");
+            result = fathom.getMm(6);
+            Assert.AreEqual(result, 12804, 0.001, "Ошибка конвертации");
+            result = fathom.getInch(6);
+            Assert.AreEqual(result, 288, 0.001, "Ошибка конвертации");
+            result = fathom.getSpan(6);
+            Assert.AreEqual(result, 72, 0.001, "Ошибка конвертации");
+            result = fathom.getArshin(6);
+            Assert.AreEqual(result, 18, 0.001, "Ошибка конвертации");
         }
     }
 }

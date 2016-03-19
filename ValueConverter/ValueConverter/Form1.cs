@@ -17,6 +17,7 @@ namespace ValueConverter
             InitializeComponent();
         }
 
+        //Метр
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             if (!activeTextBox)
@@ -33,6 +34,8 @@ namespace ValueConverter
                         textBox4.Text = Convert.ToString(metr.getMm(lenght));
                         textBox5.Text = Convert.ToString(metr.getInch(lenght));
                         textBox6.Text = Convert.ToString(metr.getSpan(lenght));
+                        textBox7.Text = Convert.ToString(metr.getArshin(lenght));
+                        textBox8.Text = Convert.ToString(metr.getFathom(lenght));
                     }
                     catch (Exception)
                     {
@@ -44,6 +47,7 @@ namespace ValueConverter
             }
         }
 
+        //Сантиметр
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             if (!activeTextBox)
@@ -60,6 +64,8 @@ namespace ValueConverter
                         textBox4.Text = Convert.ToString(sm.getMm(lenght));
                         textBox5.Text = Convert.ToString(sm.getInch(lenght));
                         textBox6.Text = Convert.ToString(sm.getSpan(lenght));
+                        textBox7.Text = Convert.ToString(sm.getArshin(lenght));
+                        textBox8.Text = Convert.ToString(sm.getFathom(lenght));
                     }
                     catch (Exception)
                     {
@@ -71,6 +77,7 @@ namespace ValueConverter
             }
         }
 
+        //Дециметр
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
             if (!activeTextBox)
@@ -87,6 +94,8 @@ namespace ValueConverter
                         textBox4.Text = Convert.ToString(dm.getMm(lenght));
                         textBox5.Text = Convert.ToString(dm.getInch(lenght));
                         textBox6.Text = Convert.ToString(dm.getSpan(lenght));
+                        textBox7.Text = Convert.ToString(dm.getArshin(lenght));
+                        textBox8.Text = Convert.ToString(dm.getFathom(lenght));
                     }
                     catch (Exception)
                     {
@@ -98,6 +107,7 @@ namespace ValueConverter
             }
         }
 
+        //Миллиметр
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
             if (!activeTextBox)
@@ -114,6 +124,8 @@ namespace ValueConverter
                         textBox3.Text = Convert.ToString(mm.getDm(lenght));
                         textBox5.Text = Convert.ToString(mm.getInch(lenght));
                         textBox6.Text = Convert.ToString(mm.getSpan(lenght));
+                        textBox7.Text = Convert.ToString(mm.getArshin(lenght));
+                        textBox8.Text = Convert.ToString(mm.getFathom(lenght));
                     }
                     catch (Exception)
                     {
@@ -125,6 +137,7 @@ namespace ValueConverter
             }
         }
 
+        //Вершок
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
             if (!activeTextBox)
@@ -141,6 +154,8 @@ namespace ValueConverter
                         textBox3.Text = Convert.ToString(inch.getDm(lenght));
                         textBox4.Text = Convert.ToString(inch.getMm(lenght));
                         textBox6.Text = Convert.ToString(inch.getSpan(lenght));
+                        textBox7.Text = Convert.ToString(inch.getArshin(lenght));
+                        textBox8.Text = Convert.ToString(inch.getFathom(lenght));
                     }
                     catch (Exception)
                     {
@@ -152,6 +167,7 @@ namespace ValueConverter
             }
         }
 
+        //Пядь
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
             if (!activeTextBox)
@@ -168,11 +184,73 @@ namespace ValueConverter
                         textBox3.Text = Convert.ToString(span.getDm(lenght));
                         textBox4.Text = Convert.ToString(span.getMm(lenght));
                         textBox5.Text = Convert.ToString(span.getInch(lenght));
+                        textBox7.Text = Convert.ToString(span.getArshin(lenght));
+                        textBox8.Text = Convert.ToString(span.getFathom(lenght));
                     }
                     catch (Exception)
                     {
                         MessageBox.Show("Ошибка в вводимого значения");
                         textBox6.Clear();
+                    }
+                    activeTextBox = false;
+                }
+            }
+        }
+
+        //Аршин
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+            if (!activeTextBox)
+            {
+                if (textBox7.Text != "")
+                {
+                    try
+                    {
+                        activeTextBox = true;
+                        double lenght = Convert.ToDouble(textBox7.Text);
+                        Arshin arshin = new Arshin();
+                        textBox1.Text = Convert.ToString(arshin.getMetr(lenght));
+                        textBox2.Text = Convert.ToString(arshin.getSm(lenght));
+                        textBox3.Text = Convert.ToString(arshin.getDm(lenght));
+                        textBox4.Text = Convert.ToString(arshin.getMm(lenght));
+                        textBox5.Text = Convert.ToString(arshin.getInch(lenght));
+                        textBox6.Text = Convert.ToString(arshin.getSpan(lenght));
+                        textBox8.Text = Convert.ToString(arshin.getFathom(lenght));
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Ошибка в вводимого значения");
+                        textBox7.Clear();
+                    }
+                    activeTextBox = false;
+                }
+            }
+        }
+
+        //Сажень
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+            if (!activeTextBox)
+            {
+                if (textBox8.Text != "")
+                {
+                    try
+                    {
+                        activeTextBox = true;
+                        double lenght = Convert.ToDouble(textBox8.Text);
+                        Fathom fathom = new Fathom();
+                        textBox1.Text = Convert.ToString(fathom.getMetr(lenght));
+                        textBox2.Text = Convert.ToString(fathom.getSm(lenght));
+                        textBox3.Text = Convert.ToString(fathom.getDm(lenght));
+                        textBox4.Text = Convert.ToString(fathom.getMm(lenght));
+                        textBox5.Text = Convert.ToString(fathom.getInch(lenght));
+                        textBox6.Text = Convert.ToString(fathom.getSpan(lenght));
+                        textBox7.Text = Convert.ToString(fathom.getArshin(lenght));
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Ошибка в вводимого значения");
+                        textBox8.Clear();
                     }
                     activeTextBox = false;
                 }

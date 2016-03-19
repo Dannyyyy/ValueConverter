@@ -12,6 +12,8 @@ namespace ValueConverter
         double Mm = 100;
         double Inch = 2.25;
         double Span = 0.562;
+        double Arshin = 0.141;
+        double Fathom = 0.0469;
 
         public double getMetr(double dm)
         {
@@ -36,6 +38,16 @@ namespace ValueConverter
         public double getMm(double dm)
         {
             return dm * Mm;
+        }
+
+        public double getArshin(double dm)
+        {
+            return dm * Arshin;
+        }
+
+        public double getFathom(double dm)
+        {
+            return dm * Fathom;
         }
     }
 }

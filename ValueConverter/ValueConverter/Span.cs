@@ -12,6 +12,8 @@ namespace ValueConverter
         double Sm = 17.78;
         double Mm = 177.8;
         double Inch = 4;
+        double Arshin = 0.25;
+        double Fathom = 0.0833;
 
         public double getMetr(double sp)
         {
@@ -36,6 +38,16 @@ namespace ValueConverter
         public double getInch(double sp)
         {
             return sp * Inch;
+        }
+
+        public double getArshin(double sp)
+        {
+            return sp * Arshin;
+        }
+
+        public double getFathom(double sp)
+        {
+            return sp * Fathom;
         }
     }
 }
