@@ -3,3 +3,5 @@ c:\users\danil\documents\visual studio 2010\Projects\ValueConverter\TestConverte
 c:\users\danil\documents\visual studio 2010\Projects\ValueConverter\TestConverter\obj\Debug\TestConverter.csprojResolveAssemblyReference.cache
 c:\users\danil\documents\visual studio 2010\Projects\ValueConverter\TestConverter\obj\Debug\TestConverter.dll
 c:\users\danil\documents\visual studio 2010\Projects\ValueConverter\TestConverter\obj\Debug\TestConverter.pdb
+C:\Users\Danil\Documents\Visual Studio 2010\Projects\ValueConverter\TestConverter\bin\Debug\ValueConverter.exe
+C:\Users\Danil\Documents\Visual Studio 2010\Projects\ValueConverter\TestConverter\bin\Debug\ValueConverter.pdb

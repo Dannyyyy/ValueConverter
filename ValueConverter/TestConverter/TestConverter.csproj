@@ -45,10 +45,14 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Metr.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sm.cs" />
     <Compile Include="UnitTestConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ValueConverter\ValueConverter.csproj">
+      <Project>{A68AC297-78D6-43CC-92DA-DB1A8E5E61AF}</Project>
+      <Name>ValueConverter</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
