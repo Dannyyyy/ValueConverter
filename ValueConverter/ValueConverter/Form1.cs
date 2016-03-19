@@ -31,6 +31,8 @@ namespace ValueConverter
                         textBox2.Text = Convert.ToString(metr.getSm(lenght));
                         textBox3.Text = Convert.ToString(metr.getDm(lenght));
                         textBox4.Text = Convert.ToString(metr.getMm(lenght));
+                        textBox5.Text = Convert.ToString(metr.getInch(lenght));
+                        textBox6.Text = Convert.ToString(metr.getSpan(lenght));
                     }
                     catch (Exception)
                     {
@@ -56,6 +58,8 @@ namespace ValueConverter
                         textBox1.Text = Convert.ToString(sm.getMetr(lenght));
                         textBox3.Text = Convert.ToString(sm.getDm(lenght));
                         textBox4.Text = Convert.ToString(sm.getMm(lenght));
+                        textBox5.Text = Convert.ToString(sm.getInch(lenght));
+                        textBox6.Text = Convert.ToString(sm.getSpan(lenght));
                     }
                     catch (Exception)
                     {
@@ -81,6 +85,8 @@ namespace ValueConverter
                         textBox1.Text = Convert.ToString(dm.getMetr(lenght));
                         textBox2.Text = Convert.ToString(dm.getSm(lenght));
                         textBox4.Text = Convert.ToString(dm.getMm(lenght));
+                        textBox5.Text = Convert.ToString(dm.getInch(lenght));
+                        textBox6.Text = Convert.ToString(dm.getSpan(lenght));
                     }
                     catch (Exception)
                     {
@@ -106,11 +112,67 @@ namespace ValueConverter
                         textBox1.Text = Convert.ToString(mm.getMetr(lenght));
                         textBox2.Text = Convert.ToString(mm.getSm(lenght));
                         textBox3.Text = Convert.ToString(mm.getDm(lenght));
+                        textBox5.Text = Convert.ToString(mm.getInch(lenght));
+                        textBox6.Text = Convert.ToString(mm.getSpan(lenght));
                     }
                     catch (Exception)
                     {
                         MessageBox.Show("Ошибка в вводимого значения");
                         textBox4.Clear();
+                    }
+                    activeTextBox = false;
+                }
+            }
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            if (!activeTextBox)
+            {
+                if (textBox5.Text != "")
+                {
+                    try
+                    {
+                        activeTextBox = true;
+                        double lenght = Convert.ToDouble(textBox5.Text);
+                        Inch inch = new Inch();
+                        textBox1.Text = Convert.ToString(inch.getMetr(lenght));
+                        textBox2.Text = Convert.ToString(inch.getSm(lenght));
+                        textBox3.Text = Convert.ToString(inch.getDm(lenght));
+                        textBox4.Text = Convert.ToString(inch.getMm(lenght));
+                        textBox6.Text = Convert.ToString(inch.getSpan(lenght));
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Ошибка в вводимого значения");
+                        textBox5.Clear();
+                    }
+                    activeTextBox = false;
+                }
+            }
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+            if (!activeTextBox)
+            {
+                if (textBox6.Text != "")
+                {
+                    try
+                    {
+                        activeTextBox = true;
+                        double lenght = Convert.ToDouble(textBox6.Text);
+                        Span span = new Span();
+                        textBox1.Text = Convert.ToString(span.getMetr(lenght));
+                        textBox2.Text = Convert.ToString(span.getSm(lenght));
+                        textBox3.Text = Convert.ToString(span.getDm(lenght));
+                        textBox4.Text = Convert.ToString(span.getMm(lenght));
+                        textBox5.Text = Convert.ToString(span.getInch(lenght));
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Ошибка в вводимого значения");
+                        textBox6.Clear();
                     }
                     activeTextBox = false;
                 }

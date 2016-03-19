@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="4eba67c8-4c7c-4c80-a5c5-d65ff29c5b03" name="Danil@DANIL-PC 2016-03-19 11:58:37" runUser="Danil-PC\Danil" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Локальные" id="26eae600-dc97-45ab-946a-70759e27358f">
+    <Description>Это - параметры по умолчанию для локального тестового запуска.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Danil_DANIL-PC 2016-03-19 11_58_37">
+      <DeploymentItem filename="C:\Users\Danil\Documents\Visual Studio 2010\Projects\ValueConverter\ValueConverter\bin\Debug\ValueConverter.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2016-03-19T11:58:37.8885764+06:00" queuing="2016-03-19T11:58:37.9185782+06:00" start="2016-03-19T11:58:37.9255786+06:00" finish="2016-03-19T11:58:38.3336019+06:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="5" executed="5" passed="4" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMetr" storage="c:\users\danil\documents\visual studio 2010\projects\valueconverter\testconverter\bin\debug\testconverter.dll" id="8457edeb-40dd-56f6-f60d-2448aada5658">
+      <Execution id="c9ebd028-0067-46b7-bc94-2b3a06d9085d" />
+      <TestMethod codeBase="C:/Users/Danil/Documents/Visual Studio 2010/Projects/ValueConverter/TestConverter/bin/Debug/TestConverter.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ValueConverter.UnitTestConverter, TestConverter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMetr" />
+    </UnitTest>
+    <UnitTest name="TestSm" storage="c:\users\danil\documents\visual studio 2010\projects\valueconverter\testconverter\bin\debug\testconverter.dll" id="e8e88452-8bdf-08c0-07ae-44cb569379e0">
+      <Execution id="d0367365-b645-4e37-b5ea-e9e3fb136834" />
+      <TestMethod codeBase="C:/Users/Danil/Documents/Visual Studio 2010/Projects/ValueConverter/TestConverter/bin/Debug/TestConverter.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ValueConverter.UnitTestConverter, TestConverter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestSm" />
+    </UnitTest>
+    <UnitTest name="TestDm" storage="c:\users\danil\documents\visual studio 2010\projects\valueconverter\testconverter\bin\debug\testconverter.dll" id="7f2258af-5541-2aa6-02b9-5828a9a344d3">
+      <Execution id="c27ce1b5-320f-44dd-bc05-9ba9f2fb8e71" />
+      <TestMethod codeBase="C:/Users/Danil/Documents/Visual Studio 2010/Projects/ValueConverter/TestConverter/bin/Debug/TestConverter.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ValueConverter.UnitTestConverter, TestConverter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestDm" />
+    </UnitTest>
+    <UnitTest name="TestMm" storage="c:\users\danil\documents\visual studio 2010\projects\valueconverter\testconverter\bin\debug\testconverter.dll" id="f734391d-c86b-9c79-6817-3a4a95dee844">
+      <Execution id="b9b0ac98-a002-413c-929f-80d2bedc5233" />
+      <TestMethod codeBase="C:/Users/Danil/Documents/Visual Studio 2010/Projects/ValueConverter/TestConverter/bin/Debug/TestConverter.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ValueConverter.UnitTestConverter, TestConverter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMm" />
+    </UnitTest>
+    <UnitTest name="TestInch" storage="c:\users\danil\documents\visual studio 2010\projects\valueconverter\testconverter\bin\debug\testconverter.dll" id="1454b147-96ce-7c73-3dd1-b153b1e98e64">
+      <Execution id="c8e7f040-384e-43c9-ad2f-0c63ed9d00b5" />
+      <TestMethod codeBase="C:/Users/Danil/Documents/Visual Studio 2010/Projects/ValueConverter/TestConverter/bin/Debug/TestConverter.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ValueConverter.UnitTestConverter, TestConverter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestInch" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="8457edeb-40dd-56f6-f60d-2448aada5658" executionId="c9ebd028-0067-46b7-bc94-2b3a06d9085d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7f2258af-5541-2aa6-02b9-5828a9a344d3" executionId="c27ce1b5-320f-44dd-bc05-9ba9f2fb8e71" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e8e88452-8bdf-08c0-07ae-44cb569379e0" executionId="d0367365-b645-4e37-b5ea-e9e3fb136834" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f734391d-c86b-9c79-6817-3a4a95dee844" executionId="b9b0ac98-a002-413c-929f-80d2bedc5233" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1454b147-96ce-7c73-3dd1-b153b1e98e64" executionId="c8e7f040-384e-43c9-ad2f-0c63ed9d00b5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c9ebd028-0067-46b7-bc94-2b3a06d9085d" testId="8457edeb-40dd-56f6-f60d-2448aada5658" testName="TestMetr" computerName="DANIL-PC" duration="00:00:00.0168637" startTime="2016-03-19T11:58:37.9275787+06:00" endTime="2016-03-19T11:58:38.1985942+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9ebd028-0067-46b7-bc94-2b3a06d9085d">
+    </UnitTestResult>
+    <UnitTestResult executionId="c27ce1b5-320f-44dd-bc05-9ba9f2fb8e71" testId="7f2258af-5541-2aa6-02b9-5828a9a344d3" testName="TestDm" computerName="DANIL-PC" duration="00:00:00.0015273" startTime="2016-03-19T11:58:38.2675981+06:00" endTime="2016-03-19T11:58:38.2765986+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c27ce1b5-320f-44dd-bc05-9ba9f2fb8e71">
+    </UnitTestResult>
+    <UnitTestResult executionId="d0367365-b645-4e37-b5ea-e9e3fb136834" testId="e8e88452-8bdf-08c0-07ae-44cb569379e0" testName="TestSm" computerName="DANIL-PC" duration="00:00:00.0009435" startTime="2016-03-19T11:58:38.2815989+06:00" endTime="2016-03-19T11:58:38.2895994+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d0367365-b645-4e37-b5ea-e9e3fb136834">
+    </UnitTestResult>
+    <UnitTestResult executionId="b9b0ac98-a002-413c-929f-80d2bedc5233" testId="f734391d-c86b-9c79-6817-3a4a95dee844" testName="TestMm" computerName="DANIL-PC" duration="00:00:00.0005185" startTime="2016-03-19T11:58:38.2915995+06:00" endTime="2016-03-19T11:58:38.2945997+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b9b0ac98-a002-413c-929f-80d2bedc5233">
+    </UnitTestResult>
+    <UnitTestResult executionId="c8e7f040-384e-43c9-ad2f-0c63ed9d00b5" testId="1454b147-96ce-7c73-3dd1-b153b1e98e64" testName="TestInch" computerName="DANIL-PC" duration="00:00:00.0173998" startTime="2016-03-19T11:58:38.2955997+06:00" endTime="2016-03-19T11:58:38.3166009+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8e7f040-384e-43c9-ad2f-0c63ed9d00b5">
+      <Output>
+        <ErrorInfo>
+          <Message>Ошибка в Assert.AreEqual. Между ожидаемым значением &lt;3,56&gt; и фактическим значением &lt;4,45&gt; требуется разница не более чем &lt;0,001&gt;. Ошибка конвертации</Message>
+          <StackTrace>   в ValueConverter.UnitTestConverter.TestInch() в C:\Users\Danil\Documents\Visual Studio 2010\Projects\ValueConverter\TestConverter\UnitTestConverter.cs:строка 78
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

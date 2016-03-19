@@ -11,115 +11,111 @@ namespace ValueConverter
     public class UnitTestConverter
     {
         //------Метры---------//
-        //Тестирование конвертации метров в дециметры
+        //Тестирование конвертации метров
         [TestMethod]
-        public void TestMetrDm()
+        public void TestMetr()
         {
             Metr metr = new Metr();
             double result = metr.getDm(8);
             Assert.AreEqual(result, 80, 0.001, "Ошибка конвертации");
-        }
-
-        //Тестирование конвертации метров в сантиметры
-        [TestMethod]
-        public void TestMetrSm()
-        {
-            Metr metr = new Metr();
-            double result = metr.getSm(8);
+            result = metr.getSm(8);
             Assert.AreEqual(result, 800, 0.001, "Ошибка конвертации");
-        }
-
-        //Тестирование конвертации метров в миллиметры
-        [TestMethod]
-        public void TestMetrMm()
-        {
-            Metr metr = new Metr();
-            double result = metr.getMm(8);
+            result = metr.getMm(8);
             Assert.AreEqual(result, 8000, 0.001, "Ошибка конвертации");
+            result = metr.getInch(8);
+            Assert.AreEqual(result, 180, 0.001, "Ошибка конвертации");
+            result = metr.getSpan(8);
+            Assert.AreEqual(result, 44.992, 0.001, "Ошибка конвертации");
         }
 
         //------Дециметры---------//
-        //Тестирование конвертации дециметров в метры
+        //Тестирование конвертации дециметров
         [TestMethod]
-        public void TestDmMetr()
+        public void TestDm()
         {
             Dm dm = new Dm();
             double result = dm.getMetr(8);
             Assert.AreEqual(result, 0.8, 0.001, "Ошибка конвертации");
-        }
-
-        //Тестирование конвертации дециметров в сантиметры
-        [TestMethod]
-        public void TestDmSm()
-        {
-            Dm dm = new Dm();
-            double result = dm.getSm(8);
+            result = dm.getSm(8);
             Assert.AreEqual(result, 80, 0.001, "Ошибка конвертации");
-        }
-
-        //Тестирование конвертации дециметров в миллиметры
-        [TestMethod]
-        public void TestDmMm()
-        {
-            Dm dm = new Dm();
-            double result = dm.getMm(8);
+            result = dm.getMm(8);
             Assert.AreEqual(result, 800, 0.001, "Ошибка конвертации");
+            result = dm.getInch(8);
+            Assert.AreEqual(result, 18, 0.001, "Ошибка конвертации");
+            result = dm.getSpan(8);
+            Assert.AreEqual(result, 4.496, 0.001, "Ошибка конвертации");
         }
 
         //------Сантиметры---------//
-        //Тестирование конвертации сантиметров в метры
+        //Тестирование конвертации сантиметров
         [TestMethod]
-        public void TestSmMetr()
+        public void TestSm()
         {
             Sm sm = new Sm();
             double result = sm.getMetr(8);
             Assert.AreEqual(result, 0.08, 0.001, "Ошибка конвертации");
-        }
-
-        //Тестирование конвертации сантиметров в дециметры
-        [TestMethod]
-        public void TestSmDm()
-        {
-            Sm sm = new Sm();
-            double result = sm.getDm(8);
+            result = sm.getDm(8);
             Assert.AreEqual(result, 0.8, 0.001, "Ошибка конвертации");
-        }
-
-        //Тестирование конвертации сантиметров в миллиметры
-        [TestMethod]
-        public void TestSmMm()
-        {
-            Sm sm = new Sm();
-            double result = sm.getMm(8);
+            result = sm.getMm(8);
             Assert.AreEqual(result, 80, 0.001, "Ошибка конвертации");
+            result = sm.getInch(8);
+            Assert.AreEqual(result, 1.8, 0.001, "Ошибка конвертации");
+            result = sm.getSpan(8);
+            Assert.AreEqual(result, 0.4496, 0.001, "Ошибка конвертации");
         }
 
         //------Миллиметры---------//
-        //Тестирование конвертации миллиметров в метры
+        //Тестирование конвертации миллиметров
         [TestMethod]
-        public void TestMmMetr()
+        public void TestMm()
         {
             Mm mm = new Mm();
             double result = mm.getMetr(8);
             Assert.AreEqual(result, 0.008, 0.001, "Ошибка конвертации");
-        }
-        
-        //Тестирование конвертации миллиметров в дециметры
-        [TestMethod]
-        public void TestMmDm()
-        {
-            Mm mm = new Mm();
-            double result = mm.getDm(8);
+            result = mm.getDm(8);
             Assert.AreEqual(result, 0.08, 0.001, "Ошибка конвертации");
+            result = mm.getSm(8);
+            Assert.AreEqual(result, 0.8, 0.001, "Ошибка конвертации");
+            result = mm.getInch(8);
+            Assert.AreEqual(result, 0.18, 0.001, "Ошибка конвертации");
+            result = mm.getSpan(8);
+            Assert.AreEqual(result, 0.04496, 0.001, "Ошибка конвертации");
         }
 
-        //Тестирование конвертации миллиметров в сантиметры
+        //------Вершки---------//
+        //Тестирование конвертации вершков
         [TestMethod]
-        public void TestMmSm()
+        public void TestInch()
         {
-            Mm mm = new Mm();
-            double result = mm.getSm(8);
-            Assert.AreEqual(result, 0.8, 0.001, "Ошибка конвертации");
+            Inch inch = new Inch();
+            double result = inch.getMetr(10);
+            Assert.AreEqual(result, 0.445, 0.001, "Ошибка конвертации");
+            result = inch.getDm(10);
+            Assert.AreEqual(result, 4.45, 0.001, "Ошибка конвертации");
+            result = inch.getSm(10);
+            Assert.AreEqual(result, 44.45, 0.001, "Ошибка конвертации");
+            result = inch.getMm(10);
+            Assert.AreEqual(result, 444.5, 0.001, "Ошибка конвертации");
+            result = inch.getSpan(10);
+            Assert.AreEqual(result, 2.5, 0.001, "Ошибка конвертации");
+        }
+
+        //------Пяди---------//
+        //Тестирование конвертации пядей
+        [TestMethod]
+        public void TestSpan()
+        {
+            Span span = new Span();
+            double result = span.getMetr(13);
+            Assert.AreEqual(result, 2.314, 0.001, "Ошибка конвертации");
+            result = span.getDm(13);
+            Assert.AreEqual(result, 23.114, 0.001, "Ошибка конвертации");
+            result = span.getSm(13);
+            Assert.AreEqual(result, 231.14, 0.001, "Ошибка конвертации");
+            result = span.getMm(13);
+            Assert.AreEqual(result, 2311.4, 0.001, "Ошибка конвертации");
+            result = span.getInch(13);
+            Assert.AreEqual(result, 52, 0.001, "Ошибка конвертации");
         }
     }
 }
