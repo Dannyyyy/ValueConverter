@@ -47,20 +47,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dm.cs" />
-    <Compile Include="Fathom.cs" />
+    <Compile Include="Foot.cs" />
+    <Compile Include="Inch.cs" />
+    <Compile Include="Sagen.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inch.cs" />
+    <Compile Include="Vershok.cs" />
     <Compile Include="Metr.cs" />
     <Compile Include="Mm.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sm.cs" />
-    <Compile Include="Span.cs" />
+    <Compile Include="Pyad.cs" />
     <Compile Include="Arshin.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

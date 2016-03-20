@@ -32,10 +32,12 @@ namespace ValueConverter
                         textBox2.Text = Convert.ToString(metr.getSm(lenght));
                         textBox3.Text = Convert.ToString(metr.getDm(lenght));
                         textBox4.Text = Convert.ToString(metr.getMm(lenght));
-                        textBox5.Text = Convert.ToString(metr.getInch(lenght));
-                        textBox6.Text = Convert.ToString(metr.getSpan(lenght));
+                        textBox5.Text = Convert.ToString(metr.getVershok(lenght));
+                        textBox6.Text = Convert.ToString(metr.getPyad(lenght));
                         textBox7.Text = Convert.ToString(metr.getArshin(lenght));
-                        textBox8.Text = Convert.ToString(metr.getFathom(lenght));
+                        textBox8.Text = Convert.ToString(metr.getSagen(lenght));
+                        textBox9.Text = Convert.ToString(metr.getFoot(lenght));
+                        textBox10.Text = Convert.ToString(metr.getInch(lenght));
                     }
                     catch (Exception)
                     {
@@ -62,10 +64,12 @@ namespace ValueConverter
                         textBox1.Text = Convert.ToString(sm.getMetr(lenght));
                         textBox3.Text = Convert.ToString(sm.getDm(lenght));
                         textBox4.Text = Convert.ToString(sm.getMm(lenght));
-                        textBox5.Text = Convert.ToString(sm.getInch(lenght));
-                        textBox6.Text = Convert.ToString(sm.getSpan(lenght));
+                        textBox5.Text = Convert.ToString(sm.getPyad(lenght));
+                        textBox6.Text = Convert.ToString(sm.getPyad(lenght));
                         textBox7.Text = Convert.ToString(sm.getArshin(lenght));
-                        textBox8.Text = Convert.ToString(sm.getFathom(lenght));
+                        textBox8.Text = Convert.ToString(sm.getSagen(lenght));
+                        textBox9.Text = Convert.ToString(sm.getFoot(lenght));
+                        textBox10.Text = Convert.ToString(sm.getInch(lenght));
                     }
                     catch (Exception)
                     {
@@ -92,10 +96,12 @@ namespace ValueConverter
                         textBox1.Text = Convert.ToString(dm.getMetr(lenght));
                         textBox2.Text = Convert.ToString(dm.getSm(lenght));
                         textBox4.Text = Convert.ToString(dm.getMm(lenght));
-                        textBox5.Text = Convert.ToString(dm.getInch(lenght));
-                        textBox6.Text = Convert.ToString(dm.getSpan(lenght));
+                        textBox5.Text = Convert.ToString(dm.getVershok(lenght));
+                        textBox6.Text = Convert.ToString(dm.getPyad(lenght));
                         textBox7.Text = Convert.ToString(dm.getArshin(lenght));
-                        textBox8.Text = Convert.ToString(dm.getFathom(lenght));
+                        textBox8.Text = Convert.ToString(dm.getSagen(lenght));
+                        textBox9.Text = Convert.ToString(dm.getFoot(lenght));
+                        textBox10.Text = Convert.ToString(dm.getInch(lenght));
                     }
                     catch (Exception)
                     {
@@ -122,10 +128,12 @@ namespace ValueConverter
                         textBox1.Text = Convert.ToString(mm.getMetr(lenght));
                         textBox2.Text = Convert.ToString(mm.getSm(lenght));
                         textBox3.Text = Convert.ToString(mm.getDm(lenght));
-                        textBox5.Text = Convert.ToString(mm.getInch(lenght));
-                        textBox6.Text = Convert.ToString(mm.getSpan(lenght));
+                        textBox5.Text = Convert.ToString(mm.getVershok(lenght));
+                        textBox6.Text = Convert.ToString(mm.getPyad(lenght));
                         textBox7.Text = Convert.ToString(mm.getArshin(lenght));
-                        textBox8.Text = Convert.ToString(mm.getFathom(lenght));
+                        textBox8.Text = Convert.ToString(mm.getSagen(lenght));
+                        textBox9.Text = Convert.ToString(mm.getFoot(lenght));
+                        textBox10.Text = Convert.ToString(mm.getInch(lenght));
                     }
                     catch (Exception)
                     {
@@ -148,14 +156,16 @@ namespace ValueConverter
                     {
                         activeTextBox = true;
                         double lenght = Convert.ToDouble(textBox5.Text);
-                        Inch inch = new Inch();
-                        textBox1.Text = Convert.ToString(inch.getMetr(lenght));
-                        textBox2.Text = Convert.ToString(inch.getSm(lenght));
-                        textBox3.Text = Convert.ToString(inch.getDm(lenght));
-                        textBox4.Text = Convert.ToString(inch.getMm(lenght));
-                        textBox6.Text = Convert.ToString(inch.getSpan(lenght));
-                        textBox7.Text = Convert.ToString(inch.getArshin(lenght));
-                        textBox8.Text = Convert.ToString(inch.getFathom(lenght));
+                        Vershok vershok = new Vershok();
+                        textBox1.Text = Convert.ToString(vershok.getMetr(lenght));
+                        textBox2.Text = Convert.ToString(vershok.getSm(lenght));
+                        textBox3.Text = Convert.ToString(vershok.getDm(lenght));
+                        textBox4.Text = Convert.ToString(vershok.getMm(lenght));
+                        textBox6.Text = Convert.ToString(vershok.getPyad(lenght));
+                        textBox7.Text = Convert.ToString(vershok.getArshin(lenght));
+                        textBox8.Text = Convert.ToString(vershok.getSAgen(lenght));
+                        textBox9.Text = Convert.ToString(vershok.getFoot(lenght));
+                        textBox10.Text = Convert.ToString(vershok.getInch(lenght));
                     }
                     catch (Exception)
                     {
@@ -178,14 +188,16 @@ namespace ValueConverter
                     {
                         activeTextBox = true;
                         double lenght = Convert.ToDouble(textBox6.Text);
-                        Span span = new Span();
-                        textBox1.Text = Convert.ToString(span.getMetr(lenght));
-                        textBox2.Text = Convert.ToString(span.getSm(lenght));
-                        textBox3.Text = Convert.ToString(span.getDm(lenght));
-                        textBox4.Text = Convert.ToString(span.getMm(lenght));
-                        textBox5.Text = Convert.ToString(span.getInch(lenght));
-                        textBox7.Text = Convert.ToString(span.getArshin(lenght));
-                        textBox8.Text = Convert.ToString(span.getFathom(lenght));
+                        Pyad pyad = new Pyad();
+                        textBox1.Text = Convert.ToString(pyad.getMetr(lenght));
+                        textBox2.Text = Convert.ToString(pyad.getSm(lenght));
+                        textBox3.Text = Convert.ToString(pyad.getDm(lenght));
+                        textBox4.Text = Convert.ToString(pyad.getMm(lenght));
+                        textBox5.Text = Convert.ToString(pyad.getVershok(lenght));
+                        textBox7.Text = Convert.ToString(pyad.getArshin(lenght));
+                        textBox8.Text = Convert.ToString(pyad.getSagen(lenght));
+                        textBox9.Text = Convert.ToString(pyad.getFoot(lenght));
+                        textBox10.Text = Convert.ToString(pyad.getInch(lenght));
                     }
                     catch (Exception)
                     {
@@ -213,9 +225,11 @@ namespace ValueConverter
                         textBox2.Text = Convert.ToString(arshin.getSm(lenght));
                         textBox3.Text = Convert.ToString(arshin.getDm(lenght));
                         textBox4.Text = Convert.ToString(arshin.getMm(lenght));
-                        textBox5.Text = Convert.ToString(arshin.getInch(lenght));
-                        textBox6.Text = Convert.ToString(arshin.getSpan(lenght));
-                        textBox8.Text = Convert.ToString(arshin.getFathom(lenght));
+                        textBox5.Text = Convert.ToString(arshin.getVershok(lenght));
+                        textBox6.Text = Convert.ToString(arshin.getPyad(lenght));
+                        textBox8.Text = Convert.ToString(arshin.getSagen(lenght));
+                        textBox9.Text = Convert.ToString(arshin.getFoot(lenght));
+                        textBox10.Text = Convert.ToString(arshin.getInch(lenght));
                     }
                     catch (Exception)
                     {
@@ -238,19 +252,83 @@ namespace ValueConverter
                     {
                         activeTextBox = true;
                         double lenght = Convert.ToDouble(textBox8.Text);
-                        Fathom fathom = new Fathom();
-                        textBox1.Text = Convert.ToString(fathom.getMetr(lenght));
-                        textBox2.Text = Convert.ToString(fathom.getSm(lenght));
-                        textBox3.Text = Convert.ToString(fathom.getDm(lenght));
-                        textBox4.Text = Convert.ToString(fathom.getMm(lenght));
-                        textBox5.Text = Convert.ToString(fathom.getInch(lenght));
-                        textBox6.Text = Convert.ToString(fathom.getSpan(lenght));
-                        textBox7.Text = Convert.ToString(fathom.getArshin(lenght));
+                        Sagen sagen = new Sagen();
+                        textBox1.Text = Convert.ToString(sagen.getMetr(lenght));
+                        textBox2.Text = Convert.ToString(sagen.getSm(lenght));
+                        textBox3.Text = Convert.ToString(sagen.getDm(lenght));
+                        textBox4.Text = Convert.ToString(sagen.getMm(lenght));
+                        textBox5.Text = Convert.ToString(sagen.getVershok(lenght));
+                        textBox6.Text = Convert.ToString(sagen.getPyad(lenght));
+                        textBox7.Text = Convert.ToString(sagen.getArshin(lenght));
+                        textBox9.Text = Convert.ToString(sagen.getFoot(lenght));
+                        textBox10.Text = Convert.ToString(sagen.getInch(lenght));
                     }
                     catch (Exception)
                     {
                         MessageBox.Show("Ошибка в вводимого значения");
                         textBox8.Clear();
+                    }
+                    activeTextBox = false;
+                }
+            }
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+            if (!activeTextBox)
+            {
+                if (textBox9.Text != "")
+                {
+                    try
+                    {
+                        activeTextBox = true;
+                        double lenght = Convert.ToDouble(textBox9.Text);
+                        Foot ft = new Foot();
+                        textBox1.Text = Convert.ToString(ft.getMetr(lenght));
+                        textBox2.Text = Convert.ToString(ft.getSm(lenght));
+                        textBox3.Text = Convert.ToString(ft.getDm(lenght));
+                        textBox4.Text = Convert.ToString(ft.getMm(lenght));
+                        textBox5.Text = Convert.ToString(ft.getVershok(lenght));
+                        textBox6.Text = Convert.ToString(ft.getPyad(lenght));
+                        textBox7.Text = Convert.ToString(ft.getArshin(lenght));
+                        textBox8.Text = Convert.ToString(ft.getSagen(lenght));
+                        textBox10.Text = Convert.ToString(ft.getInch(lenght));
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Ошибка в вводимого значения");
+                        textBox9.Clear();
+                    }
+                    activeTextBox = false;
+                }
+            }
+        }
+
+        private void textBox10_TextChanged(object sender, EventArgs e)
+        {
+            if (!activeTextBox)
+            {
+                if (textBox10.Text != "")
+                {
+                    try
+                    {
+                        activeTextBox = true;
+                        double lenght = Convert.ToDouble(textBox10.Text);
+                        Inch inch = new Inch();
+                        textBox1.Text = Convert.ToString(inch.getMetr(lenght));
+                        textBox2.Text = Convert.ToString(inch.getSm(lenght));
+                        textBox3.Text = Convert.ToString(inch.getDm(lenght));
+                        textBox4.Text = Convert.ToString(inch.getMm(lenght));
+                        textBox5.Text = Convert.ToString(inch.getVershok(lenght));
+                        textBox6.Text = Convert.ToString(inch.getPyad(lenght));
+                        textBox7.Text = Convert.ToString(inch.getArshin(lenght));
+                        textBox8.Text = Convert.ToString(inch.getSagen(lenght));
+                        textBox9.Text = Convert.ToString(inch.getFoot(lenght));
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Ошибка в вводимого значения");
+                        textBox10.Clear();
                     }
                     activeTextBox = false;
                 }

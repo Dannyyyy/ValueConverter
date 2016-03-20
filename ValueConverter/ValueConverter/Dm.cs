@@ -5,24 +5,27 @@ using System.Text;
 
 namespace ValueConverter
 {
+    //Дециметр
     public class Dm
     {
         double M = 0.1;
         double Sm = 10;
         double Mm = 100;
-        double Inch = 2.25;
-        double Span = 0.562;
+        double Vershok = 2.25;
+        double Pyad = 0.562;
         double Arshin = 0.141;
-        double Fathom = 0.0469;
+        double Sagen = 0.0469;
+        double Inch = 3.937;
+        double Foot = 0.328;
 
         public double getMetr(double dm)
         {
             return dm * M;
         }
 
-        public double getInch(double dm)
+        public double getVershok(double dm)
         {
-            return dm * Inch;
+            return dm * Vershok;
         }
 
         public double getSm(double dm)
@@ -30,9 +33,9 @@ namespace ValueConverter
             return dm * Sm;
         }
 
-        public double getSpan(double dm)
+        public double getPyad(double dm)
         {
-            return dm * Span;
+            return dm * Pyad;
         }
 
         public double getMm(double dm)
@@ -45,9 +48,19 @@ namespace ValueConverter
             return dm * Arshin;
         }
 
-        public double getFathom(double dm)
+        public double getSagen(double dm)
         {
-            return dm * Fathom;
+            return dm * Sagen;
+        }
+
+        public double getInch(double dm)
+        {
+            return dm * Inch;
+        }
+
+        public double getFoot(double dm)
+        {
+            return dm * Foot;
         }
     }
 }
