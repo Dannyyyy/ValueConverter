@@ -5,20 +5,20 @@ using System.Text;
 
 namespace ValueConverter
 {
-    //Дециметр
-    public class Dm
+    //Кабельтов
+    public class Cable
     {
-        double M = 0.1;
-        double Sm = 10;
-        double Mm = 100;
-        double Vershok = 2.25;
-        double Pyad = 0.562;
-        double Arshin = 0.141;
-        double Sagen = 0.0469;
-        double Inch = 3.937;
-        double Foot = 0.328;
-        double Yard = 0.109;
-        double Cable = 0.00054;
+        double M = 185.2;
+        double Sm = 18520;
+        double Dm = 1852;
+        double Mm = 185200;
+        double Vershok = 4166;
+        double Pyad = 1042;
+        double Arshin = 260.4;
+        double Sagen = 86.8;
+        double Inch = 7291;
+        double Foot = 607.6;
+        double Yard = 202.5;
 
         public double getMetr(double dm)
         {
@@ -28,6 +28,11 @@ namespace ValueConverter
         public double getVershok(double dm)
         {
             return dm * Vershok;
+        }
+
+        public double getDm(double dm)
+        {
+            return dm * Dm;
         }
 
         public double getSm(double dm)
@@ -68,11 +73,6 @@ namespace ValueConverter
         public double getYard(double dm)
         {
             return dm * Yard;
-        }
-
-        public double getCable(double dm)
-        {
-            return dm * Cable;
         }
     }
 }

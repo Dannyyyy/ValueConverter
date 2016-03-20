@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ValueConverter
 {
+    //Фут
     public class Foot
     {
         double Metr = 0.305;
@@ -16,6 +17,8 @@ namespace ValueConverter
         double Arshin = 0.429;
         double Sagen = 0.143;
         double Inch = 12;
+        double Yard = 0.333;
+        double Cable = 0.00165;
 
         public double getMetr(double ft)
         {
@@ -60,6 +63,16 @@ namespace ValueConverter
         public double getInch(double ft)
         {
             return ft * Inch;
+        }
+
+        public double getYard(double ft)
+        {
+            return ft * Yard;
+        }
+
+        public double getCable(double ft)
+        {
+            return ft * Cable;
         }
     }
 }

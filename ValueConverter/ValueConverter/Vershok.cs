@@ -17,6 +17,8 @@ namespace ValueConverter
         double Sagen = 0.0208;
         double Inch = 1.75;
         double Foot = 0.146;
+        double Yard = 0.0486;
+        double Cable = 0.00024;
 
         public double getMetr(double vershok)
         {
@@ -61,6 +63,16 @@ namespace ValueConverter
         public double getFoot(double vershok)
         {
             return vershok * Foot;
+        }
+
+        public double getYard(double vershok)
+        {
+            return vershok * Yard;
+        }
+
+        public double getCable(double vershok)
+        {
+            return vershok * Cable;
         }
     }
 }

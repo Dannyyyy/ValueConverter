@@ -237,5 +237,65 @@ namespace ValueConverter
             result = ft.getInch(10);
             Assert.AreEqual(result, 120, 0.001, "Ошибка конвертации");
         }
+
+        //------Ярды---------//
+        //Тестирование конвертации ярд
+        [TestMethod]
+        public void TestYard()
+        {
+            Yard yard = new Yard();
+            double result = yard.getMetr(7);
+            Assert.AreEqual(result, 6.398, 0.001, "Ошибка конвертации");
+            result = yard.getDm(7);
+            Assert.AreEqual(result, 64.008, 0.001, "Ошибка конвертации");
+            result = yard.getSm(7);
+            Assert.AreEqual(result, 640.08, 0.001, "Ошибка конвертации");
+            result = yard.getMm(7);
+            Assert.AreEqual(result, 6400.8, 0.001, "Ошибка конвертации");
+            result = yard.getVershok(7);
+            Assert.AreEqual(result, 143.99, 0.001, "Ошибка конвертации");
+            result = yard.getPyad(7);
+            Assert.AreEqual(result, 36, 0.001, "Ошибка конвертации");
+            result = yard.getArshin(7);
+            Assert.AreEqual(result, 9.002, 0.001, "Ошибка конвертации");
+            result = yard.getSagen(7);
+            Assert.AreEqual(result, 3.003, 0.001, "Ошибка конвертации");
+            result = yard.getInch(7);
+            Assert.AreEqual(result, 252, 0.001, "Ошибка конвертации");
+            result = yard.getFoot(7);
+            Assert.AreEqual(result, 21, 0.001, "Ошибка конвертации");
+            result = yard.getCable(7);
+            Assert.AreEqual(result, 0.03458, 0.001, "Ошибка конвертации");
+        }
+
+        //------Кабельтов---------//
+        //Тестирование конвертации кабельтов
+        [TestMethod]
+        public void TestCable()
+        {
+            Cable cable = new Cable();
+            double result = cable.getMetr(7);
+            Assert.AreEqual(result, 1296.4, 0.001, "Ошибка конвертации");
+            result = cable.getDm(7);
+            Assert.AreEqual(result, 12964, 0.001, "Ошибка конвертации");
+            result = cable.getSm(7);
+            Assert.AreEqual(result, 129640, 0.001, "Ошибка конвертации");
+            result = cable.getMm(7);
+            Assert.AreEqual(result, 1296400, 0.001, "Ошибка конвертации");
+            result = cable.getVershok(7);
+            Assert.AreEqual(result, 29162, 0.001, "Ошибка конвертации");
+            result = cable.getPyad(7);
+            Assert.AreEqual(result, 7294, 0.001, "Ошибка конвертации");
+            result = cable.getArshin(7);
+            Assert.AreEqual(result, 1822.8, 0.001, "Ошибка конвертации");
+            result = cable.getSagen(7);
+            Assert.AreEqual(result, 607.6, 0.001, "Ошибка конвертации");
+            result = cable.getInch(7);
+            Assert.AreEqual(result, 51037, 0.001, "Ошибка конвертации");
+            result = cable.getFoot(7);
+            Assert.AreEqual(result, 4253.2, 0.001, "Ошибка конвертации");
+            result = cable.getYard(7);
+            Assert.AreEqual(result, 1417.5, 0.001, "Ошибка конвертации");
+        }
     }
 }

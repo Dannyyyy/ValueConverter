@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cable.cs" />
     <Compile Include="Dm.cs" />
     <Compile Include="Foot.cs" />
     <Compile Include="Inch.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Sm.cs" />
     <Compile Include="Pyad.cs" />
     <Compile Include="Arshin.cs" />
+    <Compile Include="Yard.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

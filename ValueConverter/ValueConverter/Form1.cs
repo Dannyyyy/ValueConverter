@@ -38,6 +38,8 @@ namespace ValueConverter
                         textBox8.Text = Convert.ToString(metr.getSagen(lenght));
                         textBox9.Text = Convert.ToString(metr.getFoot(lenght));
                         textBox10.Text = Convert.ToString(metr.getInch(lenght));
+                        textBox11.Text = Convert.ToString(metr.getCable(lenght));
+                        textBox12.Text = Convert.ToString(metr.getYard(lenght));
                     }
                     catch (Exception)
                     {
@@ -70,6 +72,8 @@ namespace ValueConverter
                         textBox8.Text = Convert.ToString(sm.getSagen(lenght));
                         textBox9.Text = Convert.ToString(sm.getFoot(lenght));
                         textBox10.Text = Convert.ToString(sm.getInch(lenght));
+                        textBox11.Text = Convert.ToString(sm.getCable(lenght));
+                        textBox12.Text = Convert.ToString(sm.getYard(lenght));
                     }
                     catch (Exception)
                     {
@@ -102,6 +106,8 @@ namespace ValueConverter
                         textBox8.Text = Convert.ToString(dm.getSagen(lenght));
                         textBox9.Text = Convert.ToString(dm.getFoot(lenght));
                         textBox10.Text = Convert.ToString(dm.getInch(lenght));
+                        textBox11.Text = Convert.ToString(dm.getCable(lenght));
+                        textBox12.Text = Convert.ToString(dm.getYard(lenght));
                     }
                     catch (Exception)
                     {
@@ -134,6 +140,8 @@ namespace ValueConverter
                         textBox8.Text = Convert.ToString(mm.getSagen(lenght));
                         textBox9.Text = Convert.ToString(mm.getFoot(lenght));
                         textBox10.Text = Convert.ToString(mm.getInch(lenght));
+                        textBox11.Text = Convert.ToString(mm.getCable(lenght));
+                        textBox12.Text = Convert.ToString(mm.getYard(lenght));
                     }
                     catch (Exception)
                     {
@@ -166,6 +174,8 @@ namespace ValueConverter
                         textBox8.Text = Convert.ToString(vershok.getSAgen(lenght));
                         textBox9.Text = Convert.ToString(vershok.getFoot(lenght));
                         textBox10.Text = Convert.ToString(vershok.getInch(lenght));
+                        textBox11.Text = Convert.ToString(vershok.getCable(lenght));
+                        textBox12.Text = Convert.ToString(vershok.getYard(lenght));
                     }
                     catch (Exception)
                     {
@@ -198,6 +208,8 @@ namespace ValueConverter
                         textBox8.Text = Convert.ToString(pyad.getSagen(lenght));
                         textBox9.Text = Convert.ToString(pyad.getFoot(lenght));
                         textBox10.Text = Convert.ToString(pyad.getInch(lenght));
+                        textBox11.Text = Convert.ToString(pyad.getCable(lenght));
+                        textBox12.Text = Convert.ToString(pyad.getYard(lenght));
                     }
                     catch (Exception)
                     {
@@ -230,6 +242,8 @@ namespace ValueConverter
                         textBox8.Text = Convert.ToString(arshin.getSagen(lenght));
                         textBox9.Text = Convert.ToString(arshin.getFoot(lenght));
                         textBox10.Text = Convert.ToString(arshin.getInch(lenght));
+                        textBox11.Text = Convert.ToString(arshin.getCable(lenght));
+                        textBox12.Text = Convert.ToString(arshin.getYard(lenght));
                     }
                     catch (Exception)
                     {
@@ -262,6 +276,8 @@ namespace ValueConverter
                         textBox7.Text = Convert.ToString(sagen.getArshin(lenght));
                         textBox9.Text = Convert.ToString(sagen.getFoot(lenght));
                         textBox10.Text = Convert.ToString(sagen.getInch(lenght));
+                        textBox11.Text = Convert.ToString(sagen.getCable(lenght));
+                        textBox12.Text = Convert.ToString(sagen.getYard(lenght));
                     }
                     catch (Exception)
                     {
@@ -293,6 +309,8 @@ namespace ValueConverter
                         textBox7.Text = Convert.ToString(ft.getArshin(lenght));
                         textBox8.Text = Convert.ToString(ft.getSagen(lenght));
                         textBox10.Text = Convert.ToString(ft.getInch(lenght));
+                        textBox11.Text = Convert.ToString(ft.getCable(lenght));
+                        textBox12.Text = Convert.ToString(ft.getYard(lenght));
                     }
                     catch (Exception)
                     {
@@ -324,11 +342,79 @@ namespace ValueConverter
                         textBox7.Text = Convert.ToString(inch.getArshin(lenght));
                         textBox8.Text = Convert.ToString(inch.getSagen(lenght));
                         textBox9.Text = Convert.ToString(inch.getFoot(lenght));
+                        textBox11.Text = Convert.ToString(inch.getCable(lenght));
+                        textBox12.Text = Convert.ToString(inch.getYard(lenght));
                     }
                     catch (Exception)
                     {
                         MessageBox.Show("Ошибка в вводимого значения");
                         textBox10.Clear();
+                    }
+                    activeTextBox = false;
+                }
+            }
+        }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+            if (!activeTextBox)
+            {
+                if (textBox12.Text != "")
+                {
+                    try
+                    {
+                        activeTextBox = true;
+                        double lenght = Convert.ToDouble(textBox12.Text);
+                        Yard yard = new Yard();
+                        textBox1.Text = Convert.ToString(yard.getMetr(lenght));
+                        textBox2.Text = Convert.ToString(yard.getSm(lenght));
+                        textBox3.Text = Convert.ToString(yard.getDm(lenght));
+                        textBox4.Text = Convert.ToString(yard.getMm(lenght));
+                        textBox5.Text = Convert.ToString(yard.getVershok(lenght));
+                        textBox6.Text = Convert.ToString(yard.getPyad(lenght));
+                        textBox7.Text = Convert.ToString(yard.getArshin(lenght));
+                        textBox8.Text = Convert.ToString(yard.getSagen(lenght));
+                        textBox9.Text = Convert.ToString(yard.getFoot(lenght));
+                        textBox10.Text = Convert.ToString(yard.getInch(lenght));
+                        textBox11.Text = Convert.ToString(yard.getCable(lenght));
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Ошибка в вводимого значения");
+                        textBox12.Clear();
+                    }
+                    activeTextBox = false;
+                }
+            }
+        }
+
+        private void textBox11_TextChanged(object sender, EventArgs e)
+        {
+            if (!activeTextBox)
+            {
+                if (textBox11.Text != "")
+                {
+                    try
+                    {
+                        activeTextBox = true;
+                        double lenght = Convert.ToDouble(textBox11.Text);
+                        Cable cable = new Cable();
+                        textBox1.Text = Convert.ToString(cable.getMetr(lenght));
+                        textBox2.Text = Convert.ToString(cable.getSm(lenght));
+                        textBox3.Text = Convert.ToString(cable.getDm(lenght));
+                        textBox4.Text = Convert.ToString(cable.getMm(lenght));
+                        textBox5.Text = Convert.ToString(cable.getVershok(lenght));
+                        textBox6.Text = Convert.ToString(cable.getPyad(lenght));
+                        textBox7.Text = Convert.ToString(cable.getArshin(lenght));
+                        textBox8.Text = Convert.ToString(cable.getSagen(lenght));
+                        textBox9.Text = Convert.ToString(cable.getFoot(lenght));
+                        textBox10.Text = Convert.ToString(cable.getInch(lenght));
+                        textBox12.Text = Convert.ToString(cable.getYard(lenght));
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Ошибка в вводимого значения");
+                        textBox11.Clear();
                     }
                     activeTextBox = false;
                 }

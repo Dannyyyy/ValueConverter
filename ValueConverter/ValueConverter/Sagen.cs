@@ -17,6 +17,8 @@ namespace ValueConverter
         double Arshin = 3;
         double Inch = 84;
         double Foot = 7;
+        double Yard = 2.333;
+        double Cable = 0.0115;
 
         public double getMetr(double sagen)
         {
@@ -61,6 +63,16 @@ namespace ValueConverter
         public double getFoot(double sagen)
         {
             return sagen * Foot;
+        }
+
+        public double getYard(double sagen)
+        {
+            return sagen * Yard;
+        }
+
+        public double getCable(double sagen)
+        {
+            return sagen * Cable;
         }
     }
 }

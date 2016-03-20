@@ -17,6 +17,8 @@ namespace ValueConverter
         double Sagen = 0.0833;
         double Inch = 7;
         double Foot = 0.583;
+        double Yard = 0.194;
+        double Cable = 0.00096;
 
         public double getMetr(double pyad)
         {
@@ -61,6 +63,16 @@ namespace ValueConverter
         public double getFoot(double pyad)
         {
             return pyad * Foot;
+        }
+
+        public double getYard(double pyad)
+        {
+            return pyad * Yard;
+        }
+
+        public double getCable(double pyad)
+        {
+            return pyad * Cable;
         }
     }
 }
